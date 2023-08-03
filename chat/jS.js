@@ -51,7 +51,6 @@ function showPosition(position) {
   const latitude = position.coords.latitude;
   const longitude = position.coords.longitude;
 
-  // Отправка данных на сервер (здесь используется пример с fetch)
   fetch('/send-location', {
     method: 'POST',
     headers: {
