@@ -1,0 +1,23 @@
+input{
+    border: lightblue solid 2px;
+  }
+  .button {
+    background-color: lightblue;
+      border: lightblue solid 2px;
+  }
+  .button2 {
+    background-color: lightblue;
+      border: lightblue solid 2px;
+  }
+  .messages  {
+    display:flex;
+    
+    width:350px;
+    min-height:50px;
+      border: LIGHTBLUE DOTTED 2PX;
+    MARGIn-top: 20px;
+  }
+  p{
+    position:relative;
+    right: 10;
+  }
