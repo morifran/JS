@@ -18,49 +18,153 @@ document.addEventListener("DOMContentLoaded", function () {
           dot.classList.remove("slider__dot_active");
         }
       });
+      const names = document.querySelectorAll(".name");
+      names.forEach((name, index) =>{
+        if (index === currentIndex) {
+          name.classList.add("activeplus");
+        } else {
+          name.classList.remove("activeplus");
+        }
+      });
     }
-  
+    document.querySelector(".RostovBut").addEventListener("click", function (){
+      currentIndex = 0;
+      updateImage();
+      const paragraph1 = document.getElementById('advantage1');
+      paragraph1.textContent = 'Rostov-on-Don LCD admiral';
+      const paragraph2 = document.getElementById('advantage2');
+      paragraph2.textContent = '3.5 months';
+      const paragraph3 = document.getElementById('advantage3');
+      paragraph3.textContent = '81 m2';
+      const paragraph4 = document.getElementById('advantage4');
+      paragraph4.textContent = 'Upon request';
+    })
+    document.querySelector(".SochiBut").addEventListener("click", function (){
+      currentIndex = 1;
+      updateImage();
+      const paragraph1 = document.getElementById('advantage1');
+      paragraph1.textContent = 'Sochi Thieves';
+      const paragraph2 = document.getElementById('advantage2');
+      paragraph2.textContent = '4 months';
+      const paragraph3 = document.getElementById('advantage3');
+      paragraph3.textContent = '105 m2';
+      const paragraph4 = document.getElementById('advantage4');
+      paragraph4.textContent = 'Upon request';
+    })
+    document.querySelector(".Rostov2But").addEventListener("click", function (){
+      currentIndex = 2;
+      updateImage();
+      const paragraph1 = document.getElementById('advantage1');
+      paragraph1.textContent = 'Rostov-on-Don Patriotic';
+      const paragraph2 = document.getElementById('advantage2');
+      paragraph2.textContent = '3 months';
+      const paragraph3 = document.getElementById('advantage3');
+      paragraph3.textContent = '93 m2';
+      const paragraph4 = document.getElementById('advantage4');
+      paragraph4.textContent = 'Upon request';
+    })
+    document.querySelector(".fst").addEventListener("click", function (){
+      currentIndex = 0;
+      updateImage();
+      const paragraph1 = document.getElementById('advantage1');
+      paragraph1.textContent = 'Rostov-on-Don LCD admiral';
+      const paragraph2 = document.getElementById('advantage2');
+      paragraph2.textContent = '3.5 months';
+      const paragraph3 = document.getElementById('advantage3');
+      paragraph3.textContent = '81 m2';
+      const paragraph4 = document.getElementById('advantage4');
+      paragraph4.textContent = 'Upon request';
+    })
+    document.querySelector(".scnd").addEventListener("click", function (){
+      currentIndex = 1;
+      updateImage();
+      const paragraph1 = document.getElementById('advantage1');
+      paragraph1.textContent = 'Sochi Thieves';
+      const paragraph2 = document.getElementById('advantage2');
+      paragraph2.textContent = '4 months';
+      const paragraph3 = document.getElementById('advantage3');
+      paragraph3.textContent = '105 m2';
+      const paragraph4 = document.getElementById('advantage4');
+      paragraph4.textContent = 'Upon request';
+    })
+    document.querySelector(".thrd").addEventListener("click", function (){
+      currentIndex = 2;
+      updateImage();
+      const paragraph1 = document.getElementById('advantage1');
+      paragraph1.textContent = 'Rostov-on-Don Patriotic';
+      const paragraph2 = document.getElementById('advantage2');
+      paragraph2.textContent = '3 months';
+      const paragraph3 = document.getElementById('advantage3');
+      paragraph3.textContent = '93 m2';
+      const paragraph4 = document.getElementById('advantage4');
+      paragraph4.textContent = 'Upon request';
+    })
     document.querySelector(".leftArrow").addEventListener("click", function () {
       currentIndex = (currentIndex - 1 + images.length) % images.length;
       updateImage();
+      if (currentIndex === 0){
+        const paragraph1 = document.getElementById('advantage1');
+      paragraph1.textContent = 'Rostov-on-Don LCD admiral';
+      const paragraph2 = document.getElementById('advantage2');
+      paragraph2.textContent = '3.5 months';
+      const paragraph3 = document.getElementById('advantage3');
+      paragraph3.textContent = '81 m2';
+      const paragraph4 = document.getElementById('advantage4');
+      paragraph4.textContent = 'Upon request';
+      } else if (currentIndex === 1){
+        const paragraph1 = document.getElementById('advantage1');
+      paragraph1.textContent = 'Sochi Thieves';
+      const paragraph2 = document.getElementById('advantage2');
+      paragraph2.textContent = '4 months';
+      const paragraph3 = document.getElementById('advantage3');
+      paragraph3.textContent = '105 m2';
+      const paragraph4 = document.getElementById('advantage4');
+      paragraph4.textContent = 'Upon request';
+      } else if (currentIndex === 2){
+        const paragraph1 = document.getElementById('advantage1');
+      paragraph1.textContent = 'Rostov-on-Don Patriotic';
+      const paragraph2 = document.getElementById('advantage2');
+      paragraph2.textContent = '3 months';
+      const paragraph3 = document.getElementById('advantage3');
+      paragraph3.textContent = '93 m2';
+      const paragraph4 = document.getElementById('advantage4');
+      paragraph4.textContent = 'Upon request';
+      };
+
     });
   
     document.querySelector(".rightArrow").addEventListener("click", function () {
       currentIndex = (currentIndex + 1) % images.length;
       updateImage();
+      if (currentIndex === 0){
+        const paragraph1 = document.getElementById('advantage1');
+      paragraph1.textContent = 'Rostov-on-Don LCD admiral';
+      const paragraph2 = document.getElementById('advantage2');
+      paragraph2.textContent = '3.5 months';
+      const paragraph3 = document.getElementById('advantage3');
+      paragraph3.textContent = '81 m2';
+      const paragraph4 = document.getElementById('advantage4');
+      paragraph4.textContent = 'Upon request';
+      } else if (currentIndex === 1){
+        const paragraph1 = document.getElementById('advantage1');
+      paragraph1.textContent = 'Sochi Thieves';
+      const paragraph2 = document.getElementById('advantage2');
+      paragraph2.textContent = '4 months';
+      const paragraph3 = document.getElementById('advantage3');
+      paragraph3.textContent = '105 m2';
+      const paragraph4 = document.getElementById('advantage4');
+      paragraph4.textContent = 'Upon request';
+      } else if (currentIndex === 2){
+        const paragraph1 = document.getElementById('advantage1');
+      paragraph1.textContent = 'Rostov-on-Don Patriotic';
+      const paragraph2 = document.getElementById('advantage2');
+      paragraph2.textContent = '3 months';
+      const paragraph3 = document.getElementById('advantage3');
+      paragraph3.textContent = '93 m2';
+      const paragraph4 = document.getElementById('advantage4');
+      paragraph4.textContent = 'Upon request';
+      };
     });
   
     updateImage();
   });
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    const names = document.querySelectorAll('.names h2');
-    const leftArrow = document.querySelector('.leftArrow');
-    const rightArrow = document.querySelector('.rightArrow');
-  
-    // Обработчик нажатия на кнопку "Влево"
-    leftArrow.addEventListener('click', function() {
-      const activeIndex = Array.from(names).findIndex(elem => elem.classList.contains('activeplus'));
-      const lastIndex = names.length - 1;
-      
-      names[activeIndex].classList.remove('activeplus');
-      names[activeIndex].classList.add('nonactive');
-  
-      const prevIndex = activeIndex === 0 ? lastIndex : activeIndex - 1;
-      names[prevIndex].classList.remove('nonactive');
-      names[prevIndex].classList.add('activeplus');
-    });
-  
-    rightArrow.addEventListener('click', function() {
-      const activeIndex = Array.from(names).findIndex(elem => elem.classList.contains('activeplus'));
-      const lastIndex = names.length - 1;
-      
-      names[activeIndex].classList.remove('activeplus');
-      names[activeIndex].classList.add('nonactive');
-  
-      const nextIndex = activeIndex === lastIndex ? 0 : activeIndex + 1;
-      names[nextIndex].classList.remove('nonactive');
-      names[nextIndex].classList.add('activeplus');
-    });
-  });
-  
